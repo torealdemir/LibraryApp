@@ -4,9 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>LibraryApp</title>
 </head>
 <body>
+
     
+    
+    <div class="header-div">
+        <h1 id="First-Header">Personal Book Reading Tracker</h1>
+        <button id="add-btn" class="addButton">Add Book</button>
+    </div>
+
+    <div class="form-div" style="display:  none;">
+        <form class="form-style">
+            <h2 class="form-element" id="form-header">Recordings</h2>
+            <input class="form-element" type="text" name="bookName" id="bookName" placeholder="Title" maxlength="100" required>
+            <input class="form-element" type="text" name="authotName" id="authorName" placeholder="Author" required maxlength="100">
+            <input class="form-element" type="number" name="bookPage" id="bookPage" placeholder="Page" maxlength="10" required>
+            <button type="submit" id="submit-btn" class="form-element">Submit</button>
+        </form>
+
+    </div>
+    
+    <div class="library">
+
+    </div>
+
+    
+
+    <script src="script.js"></script>
 </body>
 </html>
