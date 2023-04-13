@@ -13,21 +13,28 @@
     
     <div class="header-div">
         <h1 id="First-Header">Personal Book Reading Tracker</h1>
-        <button id="add-btn" class="addButton">Add Book</button>
+        <button id="add-btn">Add Book</button>
     </div>
 
-    <div class="form-div" style="display:  none;">
-        <form class="form-style">
-            <h2 class="form-element" id="form-header">Recordings</h2>
-            <input class="form-element" type="text" name="bookName" id="bookName" placeholder="Title" maxlength="100" required>
-            <input class="form-element" type="text" name="authotName" id="authorName" placeholder="Author" required maxlength="100">
-            <input class="form-element" type="number" name="bookPage" id="bookPage" placeholder="Page" maxlength="10" required>
-            <button type="submit" id="submit-btn" class="form-element">Submit</button>
+    <div id="form-div">
+        <form id="new-book-form" style="display: none;">
+            <label for="title" class="form-el">Title</label>
+            <input type="text" id="title" class="form-el">
+            <label for="author" class="form-el">Author</label>
+            <input type="text" id="author" class="form-el">
+            <label for="pages" class="form-el">Pages</label>
+            <input type="text" id="pages" class="form-el">
+            <label for="read" class="form-el">Read</label>
+            <input type="checkbox" id="read" class="form-el">
+            <input type="submit" value="Add Book" id="submit-button">
         </form>
-
     </div>
+
     
-    <div class="library">
+
+    
+    
+    <div id="library">
 
     </div>
 
